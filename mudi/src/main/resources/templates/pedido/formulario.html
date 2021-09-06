@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Novo Pedido</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron mb-0">
+			    <h1 class="display-4">Novo Pedido</h1>
+			</div>
+			<form action="/pedido/novo" method="POST">
+				<div>
+					<label for="nomeProduto">Produto</label>
+					<input name="nomeProduto" placeholder="Nome do produto">
+					<small>Informe qual o nome do produto.</small>
+				</div>
+				<div>
+					<label for="urlProduto">URL</label>
+					<input name="urlProduto" placeholder="URL do produto">
+					<small>Procure em um site o produto que você deseja e cole a url da página aqui.</small>
+				</div>
+				<div>
+					<label for="urlImagem">URL Imagem</label>
+					<input name="urlImagem" placeholder="URL da Imagem">
+					<small>Copie a url de uma boa imagem e cole aqui para ajudar a conseguir compradores</small>
+				</div>
+				<div>
+					<label for="descricao">Descrição</label>
+					<textarea name="descricao" placeholder="Adicione detalhes importantes para ajudar o comprador"></textarea>
+				</div>
+				<button type="submit">Cadastrar</button>
+			</form>
+		</div>
+	</body>
+</html>
